@@ -99,7 +99,7 @@ do
 end
 
 -- Remove antigo painel, se houver
-local old = playerGui:FindFirstChild("AkunBitchDevourerPanel")
+local old = playerGui:FindFirstChild("VoucherX")
 if old then old:Destroy() end
 
 -- ========== PAINEL UI + DRAG MIRANDATWEEN STYLE ==========
@@ -146,7 +146,7 @@ local title = Instance.new("TextLabel", main)
 title.Name = "Title"
 title.Size = UDim2.new(1, 0, 0, TITLE_HEIGHT)
 title.Position = UDim2.new(0,0,0,0)
-title.Text = "AKUNBITCH DEVOURER"
+title.Text = "VoucherXR"
 title.Font = Enum.Font.GothamBlack
 title.TextSize = TITLE_FONT_SIZE
 title.BackgroundTransparency = 1
@@ -210,7 +210,7 @@ local function makeToggleBtn(parent, label, y, callback)
     end
 end
 
-local btnFPSDevourer, setFPSDevourerState = makeToggleBtn(main, "AkunBitch Devourer", BTN_Y0, function(on)
+local btnFPSDevourer, setFPSDevourerState = makeToggleBtn(main, "VoucherX", BTN_Y0, function(on)
     if on then FPSDevourer:Start() else FPSDevourer:Stop() end
 end)
 
